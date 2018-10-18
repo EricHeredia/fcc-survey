@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:100|Raleway:100|Cutive+Mono');
+
+h1 {
+  font-size: 50px;
+  margin: 15px;
+}
+
+body {
+  background-color: #d1a9d7;
+  text-align: center;
+}
+
+#entireform {
+  border-radius: 5%;
+  padding-top: 20px;
+  background-color: #EEEEEE;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+p {
+  font-family: Oswald;
+  font-size: 25px;
+}
+
+.labels {
+  font-family: Oswald;
+  font-size: 20px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+  padding: 10px;
+}
+
+.inputs {
+  font-family: Raleway;
+  font-size: 16px;
+  width: 48%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  position: relative;
+  top: 8px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  top: -13px;
+  line-height: 25px;
+}
+
+#comment {
+  font-family: "Cutive Mono";
+  font-size: 17px;
+}
+
+#submit {
+  display: block;
+  height: 35px;
+  width: 130px;
+  border-radius: 15px;
+  margin-top: 23px;
+  margin-left: 42%;
+}
+
+@media screen and (max-width: 1300px) {
+  #entireform {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #entireform {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .inputs {
+    text-align: left;
+    margin-left: 6%;
+    top: -10px;
+    width: 100%;
+    float: left;
+  }
+  #comment {
+    width: 90%;
+  }
+  #submit {
+    margin: auto;
+  }
+}

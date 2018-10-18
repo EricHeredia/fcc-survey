@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Survey Form</h1>
+
+<div id="entireform">
+<p id="description">General Information Survey</p>
+
+<form id="survey-form" method="GET">
+  <div class="labels">
+    <label for="name" id="name-label">* Name:</label>
+  </div>
+  <div class="inputs">
+    <input type="text" id="name" name="name" placeholder="Enter your name" autofocus required> 
+  </div>
+  
+  <div class="labels">
+    <label for="email" id="email-label">* Email:</label>
+  </div>
+  <div class="inputs">
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+  </div>
+  
+  <div class="labels">
+    <label for="number" id="number-label">* Age:</label>
+  </div>
+  <div class="inputs">
+    <input type="number" id="number" name="age" placeholder="Age" min="1" max="125" required>
+  </div>
+  
+  
+  <div class="labels">
+    <label for="edulvl" id="eduradio">* Highest level of education:</label>
+  </div>
+  <div class="inputs">
+    <ul id="edulist" style="list-style: none;">
+      <li><label class="radio"><input type="radio" name="edulvl" value="1" required>No High School</input></label></li>
+      <li><label class="radio"><input type="radio" name="edulvl" value="2">High School Diploma</input></label></li>
+      <li><label class="radio"><input type="radio" name="edulvl" value="3">Some College</input></label></li>
+      <li><label class="radio"><input type="radio" name="edulvl" value="4">College Degree</input></label></li>
+    </ul>
+  </div>
+  
+
+  <div class="labels">
+    <label for="cartype" id="dropdown-label">What kind of car do you own?:</label>
+  </div>
+  <div class="inputs">
+    <select id="dropdown" name="cartype">
+      <option disabled selected="selected">Please choose</option>
+      <option value="honda">Honda</option>
+      <option value="ford">Ford</option>
+      <option value="jeep">Jeep</option>
+      <option value="nota">None of the above</option>
+      <option valut="dont">I do not own a car</option>
+    </select>
+  </div>
+  
+
+  <div class="labels">
+    <label for="ownpet" id="petcheckbox">Please select types of owned pets:</label>
+  </div>
+  <div class="inputs">
+    <ul id="petlist" style="list-style: none;">
+      <li><label class="checkbox"><input type="checkbox" name="ownpet" value="1">Dog</input></label></li>
+      <li><label class="checkbox"><input type="checkbox" name="ownpet" value="2">Cat</input></label></li>
+      <li><label class="checkbox"><input type="checkbox" name="ownpet" value="3">Fish</input></label></li>
+      <li><label class="checkbox"><input type="checkbox" name="ownpet" value="4">Other</input></label></li>
+      <li><label class="checkbox"><input type="checkbox" name="ownpet" value="5">None</input></label></li>
+    </ul>
+  </div>
+  
+
+  <div class="labels">
+    <label for="comorsug">What is the most unique thing about yourself?:</label>
+  </div>
+  <div class="inputs">
+    <textarea name="comorsug" id="comment" placeholder="Enter your text here..." style="height:100px; width: 300px;resize:none;"></textarea>
+  </div>
+
+  
+  <input type="submit" id="submit" value="Submit">
+  <br>
+</form>
+</div>
+
+</html>
